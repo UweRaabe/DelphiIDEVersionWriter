@@ -264,6 +264,7 @@ const
     'Delphi 10.3 Rio',              // 33
     'Delphi 10.4%s Sydney',         // 34
     'Delphi 11%s Alexandria',       // 35
+    'Delphi 12%s Athens',           // 36
     ''];
 var
   lst: TStringList;
@@ -289,6 +290,9 @@ begin
 {$IFEND}
 {$IF declared(RTLVersion113) }
       minorVersion := 3;
+{$IFEND}
+{$IF declared(RTLVersion121) }
+      minorVersion := 1;
 {$IFEND}
     subVersion := '';
     if minorVersion > 0 then
