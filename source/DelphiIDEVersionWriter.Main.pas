@@ -294,7 +294,7 @@ begin
 {$IF declared(RTLVersion121) }
       minorVersion := 1;
 {$IFEND}
-{$IF declared(RTLVersion121) }
+{$IF declared(RTLVersion122) }
       minorVersion := 2;
 {$IFEND}
     subVersion := '';
