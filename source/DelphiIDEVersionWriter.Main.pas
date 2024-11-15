@@ -294,6 +294,9 @@ begin
 {$IF declared(RTLVersion121) }
       minorVersion := 1;
 {$IFEND}
+{$IF declared(RTLVersion121) }
+      minorVersion := 2;
+{$IFEND}
     subVersion := '';
     if minorVersion > 0 then
       subVersion := '.' + minorVersion.ToString;
